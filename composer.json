@@ -1,0 +1,18 @@
+{
+    "name": "aleksey/hexlet-tests",
+    "autoload": {
+	"files": [
+		"src/StringUtils.php"
+	],
+        "psr-4": {
+            "Aleksey\\HexletTests\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aleksey Kononenko",
+            "email": "aleksey19988@gmail.com"
+        }
+    ],
+    "require": {}
+}
