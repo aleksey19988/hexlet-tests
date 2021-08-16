@@ -1,5 +1,7 @@
 <?php
 
+use Webmozart\Assert\Assert;
+
 // Путь который будет использован при глобальной установке пакета
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 // Путь для локальной работы с проектом
@@ -11,12 +13,8 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-if (StringUtils\capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
+Assert::eq(capitalize(''), '');
 
-if (StringUtils\capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
+Assert::eq(capitalize('hello'), 'Hello');
 
 echo 'Все тесты пройдены!';

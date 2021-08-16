@@ -7,10 +7,19 @@ namespace Composer\Autoload;
 class ComposerStaticInit0f1fd0ee4798a42fc2b694125b98a714
 {
     public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '535af788f525df6bbd69ba56d5b158b4' => __DIR__ . '/../..' . '/src/StringUtils.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Webmozart\\Assert\\' => 17,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+        ),
         'A' => 
         array (
             'Aleksey\\HexletTests\\' => 20,
@@ -18,6 +27,14 @@ class ComposerStaticInit0f1fd0ee4798a42fc2b694125b98a714
     );
 
     public static $prefixDirsPsr4 = array (
+        'Webmozart\\Assert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
         'Aleksey\\HexletTests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
