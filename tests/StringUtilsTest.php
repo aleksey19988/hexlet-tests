@@ -1,6 +1,7 @@
 <?php
 
 use Webmozart\Assert\Assert;
+use function StringUtils\capitalize;
 
 // Путь который будет использован при глобальной установке пакета
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
@@ -12,14 +13,16 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
+/*
 //Эти тесты (стандатные) - работают
 assert(capitalize('') == '');
 assert(capitalize('hello') == 'Hello');
+ */
 
-/*Эти тесты (с использованием библиотеки) - не работает
+//Эти тесты (с использованием библиотеки) - не работает
 Assert::eq(capitalize(''), '');
 
 Assert::eq(capitalize('hello'), 'Hello');
-*/
 
-echo 'Все тесты пройдены!';
+
+echo "Все тесты пройдены!\n";
